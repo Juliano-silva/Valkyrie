@@ -14,7 +14,7 @@ var SalveImage = localStorage.getItem("LoginSalvoImage")
 var SalveDescri = localStorage.getItem("LoginSalvoDescription")
 const List = ({items}) => {
   return(
-    <div>
+    <div className={style.Login}>
       <h1>Seu User é {SalveUser}</h1>
       <img src={SalveImage} alt="" />
       <p>{SalveDescri}</p>
@@ -47,16 +47,10 @@ const Login = () => {
           if (item.id === editId){return {...item,title:name,textinho:textinho,image:image}}
         })
         );
-        setName("");
-        setImage("");
-        setTextinho("");
         setIdEditing(false);
     }else{
       const newItem = {id: new Date().getTime().toString(),title:name,textinho:textinho,image:image};
       setLogin([...login,newItem]);
-      setName("");
-      setImage("");
-      setTextinho("");
     }
   };
   const clearList = () => {

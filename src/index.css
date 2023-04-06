@@ -7,7 +7,9 @@ body {
   background: #363333;
   color: white;
 }
-
+body::-webkit-scrollbar{
+  width: 0px;
+}
 input, textarea {
   all: unset;
   display: block;

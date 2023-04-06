@@ -5,13 +5,11 @@ const List = ({items}) => {
     <div>{items.map((item) => {
       const {id,title,image,textinho} = item;
       return(
-        <ul key={id}>
-          <li>
+        <div key={id} className={style.ListaLogin}>
             <h1>{title}</h1>
             <img src={image} alt="" />
-            <p>{textinho}</p>
-          </li>
-        </ul>
+            <p>Descrição: {textinho}</p>
+        </div>
         )
       })}
     </div>

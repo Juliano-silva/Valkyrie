@@ -1,11 +1,12 @@
 import React,{useState,useEffect} from "react";
+import style from './style.module.css'
 const List = ({items}) => {
     return(
         <div className="container">
             {items.map((item) => {
                 const {id,title,user} = item;
                 return(
-                    <div key={id}>
+                    <div key={id} className={style.TelaPrincipal}>
                             <h1>{user} falou: {title}</h1>
                     </div>
                 )
@@ -55,7 +56,6 @@ const ApiInicial = () =>{
     <div>
       <section>
         <form onSubmit={handleSubmit}>
-            <h1>Adicionar um Prato novo</h1>
             <textarea type="text" placeholder="Comentário" onChange={(e) => setName(e.target.value)} value={name} />
             <button type="submit">
               {isEditing ? "Editar" : "Enviar"}

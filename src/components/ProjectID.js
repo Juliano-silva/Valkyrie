@@ -1,4 +1,5 @@
 import React from 'react'
+import style from './style.module.css'
 const ProjectID = () => {
   var url_atual = window.location.href;
   const url_modificar = url_atual.substring(32)
@@ -8,12 +9,10 @@ const ProjectID = () => {
   var img = JSON.stringify(id[urlVerdadeira].image).replace(/["]/g,'')
   var description = JSON.stringify(id[urlVerdadeira].textinho).replace(/["]/g,'')
   return (
-    <div>
-    <div>
-      <h1>Seu Nome é {title}</h1>
+    <div className={style.ProjectID}>
+      <h1>Fórum <span>{title}</span></h1>
       <img src={img} alt="" />
       <p>{description}</p>
-    </div>
     </div>
   )
 }
