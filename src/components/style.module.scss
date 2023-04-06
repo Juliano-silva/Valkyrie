@@ -1,0 +1,68 @@
+// Header
+.Header{
+    border: 0.2vh solid black;
+    background-color: #8f8888;
+    text-align: center;
+    height: 15vh;
+}
+.Header > h1::first-letter{
+    color: white;
+    font-size: 8vh;
+}
+.Header > h1{
+    color: yellow;
+    font-size: 7vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0.2vh 0.2vh ;
+}
+.LinkHref{
+    position: relative;
+    border: 0.2vh solid transparent;
+    height: 7vh;
+    width: 80vh;
+    display: block;
+    margin: auto;
+    margin-top: -2vh;
+}
+.LinkHref > a{
+    display: table-cell;
+    border: 0.2vh solid transparent;
+    padding: 2vh;
+    text-decoration: none;
+    color: white;
+    font-size: 4vh;
+    cursor: pointer;
+    text-shadow: 0.2vh 0.2vh 0.2vh black;
+}
+.LinkHref > a::first-letter{
+    color: yellow;
+}
+.LinkHref > a:hover{
+    transition: 5s;
+    filter: invert(1);
+}
+// Adicionar
+.LinkT{
+    display: block;
+    color: yellow;
+    text-decoration: none;
+    font-size: 3vh;
+    text-align: center;
+    border: 0.2vh solid #928c8c;
+    background: #303030;
+    width: 60%;
+    word-break: break-all;
+    height: 100%;
+    margin: auto;
+    border-radius: 1vh;
+    margin-top: 2vh;
+  }
+.LinkT:hover{
+    transition: 5s;
+    filter: invert(1);
+}
+// Login
+.Login{
+
+}
+// Lista Login
